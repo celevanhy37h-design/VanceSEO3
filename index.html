@@ -195,6 +195,22 @@
         <p>© 2026 Vance Digital Analytics. All rights reserved.</p>
     </footer>
 <script>
+    const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const service = document.getElementById("service").value;
+
+    window.dataLayer = window.dataLayer || [];
+
+    window.dataLayer.push({
+        event: "contact_form_submit",
+        service: service
+    });
+
+    alert("Thank you! Your message has been received.");
+});
     const contactButton = document.getElementById("contactButton");
     const contactButton2 = document.getElementById("contactButton2");
 
