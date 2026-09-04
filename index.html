@@ -9,6 +9,56 @@
     <meta name="description"
           content="Vance Digital Analytics provides SEO, GA4, Google Tag Manager and conversion tracking services.">
 <style>
+    .contact-section {
+    background: white;
+    padding: 50px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 35px;
+}
+
+.contact-heading h2 {
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    max-width: 650px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+}
     .about-section {
     background: white;
     padding: 50px 35px;
@@ -399,35 +449,73 @@
 
 </section>
 
-        <section id="contact">
-    <h2>Let's Work Together</h2>
+        <section id="contact" class="contact-section">
 
-    <p>
-        Have a website that needs better tracking or analytics?
-    </p>
+    <div class="contact-heading">
+        <p class="section-label">GET IN TOUCH</p>
 
-    <form id="contactForm">
+        <h2>Let's Talk About Your Website</h2>
 
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required>
+        <p>
+            Need help with SEO, analytics, tracking, or
+            understanding what your website visitors are doing?
+            Send me a message.
+        </p>
+    </div>
 
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" required>
+    <form id="contactForm" class="contact-form">
 
-        <label for="service">What do you need?</label>
-        <select id="service" name="service" required>
-            <option value="">Select a service</option>
-            <option value="technical-seo">Technical SEO</option>
-            <option value="ga4">GA4 Analytics</option>
-            <option value="gtm">Google Tag Manager</option>
-            <option value="conversion-tracking">Conversion Tracking</option>
-        </select>
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="service">Service</label>
+
+            <select id="service" name="service" required>
+                <option value="">Choose a service</option>
+                <option value="technical-seo">Technical SEO</option>
+                <option value="ga4">Google Analytics 4</option>
+                <option value="gtm">Google Tag Manager</option>
+                <option value="conversion-tracking">
+                    Conversion Tracking
+                </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project..."
+                required></textarea>
+        </div>
 
         <button type="submit">
             Send Message
         </button>
 
     </form>
+
 </section>
 
     </main>
