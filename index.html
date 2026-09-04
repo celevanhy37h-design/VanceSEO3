@@ -773,5 +773,21 @@ button:hover,
         alert("Thank you! Your message has been received.");
     });
 </script>
+    <script>
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", function () {
+        const service = document.getElementById("service").value;
+
+        window.dataLayer = window.dataLayer || [];
+
+        window.dataLayer.push({
+            event: "contact_form_submit",
+            service: service
+        });
+    });
+}
+</script>
 </body>
 </html>
