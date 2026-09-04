@@ -373,6 +373,69 @@
         grid-template-columns: 1fr;
     }
 }
+    /* Final mobile polish */
+
+html {
+    scroll-behavior: smooth;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #2563eb;
+    border-color: #2563eb;
+}
+
+button,
+.primary-button,
+.secondary-button,
+.nav-links a {
+    transition: 0.2s ease;
+}
+
+button:hover,
+.primary-button:hover,
+.secondary-button:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+
+    .contact-section {
+        padding: 35px 20px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
+    }
+}
 </style>
 </head>
 
