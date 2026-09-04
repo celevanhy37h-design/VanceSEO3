@@ -9,6 +9,34 @@
     <meta name="description"
           content="Vance Digital Analytics provides SEO, GA4, Google Tag Manager and conversion tracking services.">
 <style>
+    .about-section {
+    background: white;
+    padding: 50px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.about-content h2 {
+    margin-top: 5px;
+}
+
+.about-content p {
+    margin-bottom: 18px;
+}
+
+@media (max-width: 600px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
     .services-section {
     background: transparent;
     box-shadow: none;
@@ -337,15 +365,39 @@
     </div>
 
             </section>
+<section id="about" class="about-section">
 
-        <section id="about">
-    <h2>About Me</h2>
+    <div class="about-content">
+
+        <div>
+            <p class="section-label">ABOUT ME</p>
+
+            <h2>Data, Search & Measurement</h2>
+        </div>
+
+        <div>
+            <p>
+                I'm building my career around digital analytics and
+                technical SEO, with a focus on helping businesses
+                understand what is happening on their websites.
+            </p>
 
             <p>
-                I'm building expertise in technical SEO, Google Tag Manager,
-                Google Analytics 4 and conversion tracking.
+                My technical focus includes Google Analytics 4,
+                Google Tag Manager, data layer implementation,
+                conversion tracking, and technical SEO.
             </p>
-        </section>
+
+            <p>
+                I believe good marketing decisions start with
+                reliable data and a website that search engines
+                and users can understand.
+            </p>
+        </div>
+
+    </div>
+
+</section>
 
         <section id="contact">
     <h2>Let's Work Together</h2>
