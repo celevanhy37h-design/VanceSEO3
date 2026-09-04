@@ -9,6 +9,81 @@
     <meta name="description"
           content="Vance Digital Analytics provides SEO, GA4, Google Tag Manager and conversion tracking services.">
 <style>
+    .hero {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero-label {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    font-size: 19px;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary-button {
+    background: #2563eb;
+    color: white;
+}
+
+.secondary-button {
+    border: 1px solid white;
+    color: white;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+    opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+}
     * {
         box-sizing: border-box;
         margin: 0;
@@ -114,12 +189,36 @@
         </div>
     </nav>
 
-    <header>
-        <h1>Vance Digital Analytics</h1>
+    <header class="hero">
 
-        <p>
-            SEO • GA4 • Google Tag Manager • Conversion Tracking
+    <div class="hero-content">
+
+        <p class="hero-label">
+            DIGITAL ANALYTICS & SEO
         </p>
+
+        <h1>
+            Turn Website Data Into Better Business Decisions
+        </h1>
+
+        <p class="hero-description">
+            I help businesses improve their search visibility,
+            understand their website data, and measure the
+            conversions that matter.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#contact" class="primary-button">
+                Work With Me
+            </a>
+
+            <a href="#services" class="secondary-button">
+                Explore Services
+            </a>
+        </div>
+
+    </div>
+
     </header>
 
     <main>
