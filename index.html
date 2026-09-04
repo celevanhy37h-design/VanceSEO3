@@ -517,7 +517,6 @@
     </form>
 
 </section>
-
     </main>
 
     <footer>
@@ -526,29 +525,19 @@
 <script>
     const contactForm = document.getElementById("contactForm");
 
-contactForm.addEventListener("submit", function (event) {
-    event.preventDefault();
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
 
-    const service = document.getElementById("service").value;
+        const service = document.getElementById("service").value;
 
-    window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
 
-    window.dataLayer.push({
-        event: "contact_form_submit",
-        service: service
-    });
+        window.dataLayer.push({
+            event: "contact_form_submit",
+            service: service
+        });
 
-    alert("Thank you! Your message has been received.");
-});
-    const contactButton = document.getElementById("contactButton");
-    const contactButton2 = document.getElementById("contactButton2");
-
-    contactButton.addEventListener("click", function () {
-        alert("Thank you for your interest! Contact details coming soon.");
-    });
-
-    contactButton2.addEventListener("click", function () {
-        alert("Thank you for your interest! Contact details coming soon.");
+        alert("Thank you! Your message has been received.");
     });
 </script>
 </body>
