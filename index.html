@@ -327,6 +327,52 @@
             padding: 25px;
         }
     }
+    .projects-section {
+    background: transparent;
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.project-type {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    margin-bottom: 18px;
+}
+
+.project-card span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media(max-width:600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
 </style>
 </head>
 
@@ -515,6 +561,54 @@
                 Tracking should measure actions that matter, such as
                 leads, enquiries, purchases, and form submissions.
             </p>
+        </div>
+
+    </div>
+
+</section>
+        <section id="projects" class="projects-section">
+
+    <div class="section-heading">
+        <p class="section-label">MY PROJECTS</p>
+
+        <h2>Practical Analytics & SEO Projects</h2>
+
+        <p>
+            A selection of practical projects demonstrating my skills
+            in analytics, tracking, and technical SEO.
+        </p>
+    </div>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <p class="project-type">ANALYTICS</p>
+            <h3>GA4 Event Tracking</h3>
+            <p>
+                Built and tested a GA4 measurement setup for important
+                website interactions and user actions.
+            </p>
+            <span>GA4 • Events • Key Events</span>
+        </div>
+
+        <div class="project-card">
+            <p class="project-type">TRACKING</p>
+            <h3>GTM Contact Form Tracking</h3>
+            <p>
+                Created a data layer event for contact form submissions
+                and prepared the tracking structure for GTM and GA4.
+            </p>
+            <span>GTM • Data Layer • Conversion Tracking</span>
+        </div>
+
+        <div class="project-card">
+            <p class="project-type">SEO</p>
+            <h3>Technical SEO Audit</h3>
+            <p>
+                Practiced identifying technical SEO issues involving
+                crawling, indexing, redirects, and website structure.
+            </p>
+            <span>Technical SEO • GSC • Crawling</span>
         </div>
 
     </div>
