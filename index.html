@@ -9,6 +9,53 @@
     <meta name="description"
           content="Vance Digital Analytics provides SEO, GA4, Google Tag Manager and conversion tracking services.">
 <style>
+    .services-section {
+    background: transparent;
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.section-label {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    margin-bottom: 15px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.service-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 600px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
     .hero {
     background: #111827;
     color: white;
@@ -236,29 +283,60 @@
             </button>
         </section>
         
-            <section id="services">
-    <h2>My Services</h2>
+            <section id="services" class="services-section">
 
+    <div class="section-heading">
+        <p class="section-label">WHAT I DO</p>
+
+        <h2>Digital Analytics & SEO Services</h2>
+
+        <p>
+            Practical solutions to help businesses understand their
+            website, improve visibility, and measure performance.
+        </p>
+    </div>
+
+    <div class="service-grid">
+
+        <div class="service-card">
             <h3>Technical SEO</h3>
-            <p>
-                Website crawling, indexing, Search Console and technical SEO audits.
-            </p>
 
+            <p>
+                Improve crawling, indexing, website structure,
+                redirects, and technical search performance.
+            </p>
+        </div>
+
+        <div class="service-card">
             <h3>Google Analytics 4</h3>
-            <p>
-                Event tracking, key events, reporting and analytics implementation.
-            </p>
 
+            <p>
+                Set up events, key events, parameters, and
+                measurement so you can understand user behavior.
+            </p>
+        </div>
+
+        <div class="service-card">
             <h3>Google Tag Manager</h3>
-            <p>
-                Tag, trigger, variable and data layer implementation.
-            </p>
 
-            <h3>Conversion Tracking</h3>
             <p>
-                Accurate measurement of leads, purchases and other important actions.
+                Build reliable tags, triggers, variables, and
+                data layer implementations without unnecessary code.
             </p>
-        </section>
+        </div>
+
+        <div class="service-card">
+            <h3>Conversion Tracking</h3>
+
+            <p>
+                Measure leads, form submissions, purchases, and
+                other actions that matter to your business.
+            </p>
+        </div>
+
+    </div>
+
+            </section>
 
         <section id="about">
     <h2>About Me</h2>
